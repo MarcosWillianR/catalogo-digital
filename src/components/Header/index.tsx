@@ -41,7 +41,12 @@ const Header: React.FC<HeaderProps> = ({ handleToggleCart }) => {
         </div>
 
         <PageSelectionInput>
-          <InputMask mask="999" placeholder={pageText} maskPlaceholder="" />
+          <InputMask
+            mask="999"
+            placeholder={pageText}
+            maskPlaceholder=""
+            maskChar={null}
+          />
         </PageSelectionInput>
 
         <div>
