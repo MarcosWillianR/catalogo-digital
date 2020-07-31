@@ -5,11 +5,12 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
+  width: ${props => (props.isCartActive ? 'calc(100% - 360px)' : '100%')};
+
   height: 100vh;
 
   position: relative;
-  right: ${props => (props.isCartActive ? '360px' : '0px')};
-  transition: right 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 `;
 
 export const MainContainer = styled.div`
