@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 interface ContainerProps {
   isCartActive?: boolean;
@@ -31,6 +31,24 @@ export const DescriptionContainer = styled.div`
 
 export const ImageContainer = styled.div`
   text-align: center;
+  display: flex;
+  align-items: center;
+  padding-right: 22px;
+
+  button {
+    border: 0;
+    background: transparent;
+  }
+
+  button:first-of-type {
+    margin-top: 22px;
+  }
+
+  button:last-of-type {
+    flex: 1;
+    margin-bottom: 27px;
+  }
+
   img {
     height: 100%;
     max-height: 800px;
@@ -79,4 +97,10 @@ export const ActionText = styled.p`
     margin-left: 4px;
     text-decoration: underline;
   }
+`;
+
+export const IconsContainer = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
